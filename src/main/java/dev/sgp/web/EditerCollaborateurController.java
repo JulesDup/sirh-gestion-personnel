@@ -56,12 +56,12 @@ public class EditerCollaborateurController extends HttpServlet {
 			parametreManquant.add("prenom");
 
 		if (parametreManquant.isEmpty()) {
-			// si on a pas d'erreur
+			// si on a pas d'erreur on renvoie les informations
 			resp.setStatus(201);
 			resp.getWriter().write("Creation d’un collaborateur avec les informations suivantes :");
 			resp.getWriter()
 					.write("matricule=" + matricule + ", titre=" + titre + ", nom=" + nom + ", prenom=" + prenom);
-
+			// si on a pas d'erreur on renvoie les informations
 		} else {
 			resp.setStatus(201);
 			resp.getWriter().write("Creation d’un collaborateur avec les informations suivantes :");
