@@ -79,7 +79,7 @@ dist/css/bootstrap.css"
 					<h4 class="card-title"><%=collab.getNom() + " " + collab.getPrenom()%></h4>
 					<div class="row">
 						<div class="col-4">
-							<img src="https://www.thispersondoesnotexist.com/image"
+							<img src=""
 								class="img-thumbnail" style="width: 200px; height: 200px;"
 								alt="photo de profil"
 							>

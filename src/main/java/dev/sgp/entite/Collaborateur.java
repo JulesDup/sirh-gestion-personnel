@@ -7,7 +7,7 @@ public class Collaborateur {
 	String matricule;
 	String nom;
 	String prenom;
-	LocalDate dateDeNaissance;
+	String dateDeNaissance;
 	String Adresse;
 	String numeroDeSecu;
 	String emailPro;
@@ -29,7 +29,7 @@ public class Collaborateur {
 	 * @param dateHeureCreation
 	 * @param actif
 	 */
-	public Collaborateur(String matricule, String nom, String prenom, LocalDate dateDeNaissance, String adresse,
+	public Collaborateur(String matricule, String nom, String prenom, String dateDeNaissance, String adresse,
 			String numeroDeSecu, String emailPro, String photo, ZonedDateTime dateHeureCreation, Boolean actif) {
 		super();
 		this.matricule = matricule;
@@ -51,7 +51,7 @@ public class Collaborateur {
 	 * @param nom
 	 * @param prenom
 	 */
-	public Collaborateur(String matricule, String nom, String prenom, LocalDate dateDeNaissance, String adresse) {
+	public Collaborateur(String matricule, String nom, String prenom, String dateDeNaissance, String adresse) {
 		super();
 		this.matricule = matricule;
 		this.nom = nom;
@@ -92,7 +92,7 @@ public class Collaborateur {
 	 * 
 	 * @return the dateDeNaissance
 	 */
-	public LocalDate getDateDeNaissance() {
+	public String getDateDeNaissance() {
 		return dateDeNaissance;
 	}
 
@@ -182,7 +182,7 @@ public class Collaborateur {
 	 * 
 	 * @param dateDeNaissance the dateDeNaissance to set
 	 */
-	public void setDateDeNaissance(LocalDate dateDeNaissance) {
+	public void setDateDeNaissance(String dateDeNaissance) {
 		this.dateDeNaissance = dateDeNaissance;
 	}
 

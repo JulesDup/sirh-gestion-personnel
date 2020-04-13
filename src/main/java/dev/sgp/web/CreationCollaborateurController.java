@@ -59,8 +59,8 @@ public class CreationCollaborateurController extends HttpServlet {
 			String email = mapErreur.get("nom").toLowerCase() + "." + mapErreur.get("prenom").toLowerCase()
 					+ "@societe.com";
 			Constantes.COLLAB_SERVICE.sauvegarderCollaborateur(new Collaborateur(matricule, mapErreur.get("nom"),
-					mapErreur.get("prenom"), LocalDate.parse(mapErreur.get("naissance")), mapErreur.get("adresse"),
-					numSecu, email, photo, ZonedDateTime.now(), true));
+					mapErreur.get("prenom"), mapErreur.get("naissance"), mapErreur.get("adresse"), numSecu, email,
+					photo, ZonedDateTime.now(), true));
 
 			resp.sendRedirect(req.getContextPath() + "/collaborateurs/lister");
 		}
